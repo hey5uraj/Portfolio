@@ -1,18 +1,22 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MainPage from './components/MainPage/MainPage';
-
+import './App.css';
+import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
+import Layout from './Pages/Layout/Layout';
+import MainPage from './Pages/MainPage/MainPage';
 
 const App = () => {
   return (
-   <>
-   <BrowserRouter>
-   <Routes>
-    <Route path='/' element={<MainPage/>}/>
-   </Routes>
-   
-   </BrowserRouter>
-   </>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Layout />} />
+          {/* <Route  index element={<Outlet />}>
+            <Route path='/MainPage'  element={<MainPage />} />
+          </Route> */}
+        </Routes>
+
+      </BrowserRouter>
+    </>
   );
 }
 

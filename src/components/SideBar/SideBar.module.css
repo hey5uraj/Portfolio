@@ -1,0 +1,69 @@
+.MainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    writing-mode: vertical-rl;
+}
+
+.MainDiv .Content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+
+}
+
+.Content a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transform: rotate(360deg);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--col);
+    position: absolute;
+    bottom: 25%;
+    cursor: pointer;
+}
+
+.Content a:hover {
+    color: var(--hov);
+}
+
+.MainDiv>.Content::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 150px;
+    border-radius: 30px 30px 0 0;
+    background-color: var(--col);
+    bottom: 0;
+}
+
+.Content .Links {
+    position: absolute;
+    bottom: 25%;
+}
+
+.Content .Links span {
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+}
+
+.Content .Links span svg {
+    font-size: 30px;
+    color: var(--col);
+    cursor: pointer;
+}
+
+.Content .Links span svg:hover {
+    color: var(--hov);
+}
