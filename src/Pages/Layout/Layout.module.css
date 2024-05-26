@@ -1,0 +1,44 @@
+.LayoutMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+/* .navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  } */
+
+.layoutPage{
+    display: flex;
+   flex: 1;
+   position: relative;
+}
+.PageContainer{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    background-color: var(--bl);
+
+}
+.LeftSide {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 999;
+}
+.RightSide {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 999;
+}
+
