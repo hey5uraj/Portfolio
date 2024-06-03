@@ -17,7 +17,7 @@
     height: 100%;
     max-height: 100%;
     padding: 20px 15px;
-    gap: 50px;
+    gap: 100px;
 
 }
 
@@ -27,12 +27,24 @@
 .MainPageDiv {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    /* height: 800px; */
     padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 50px 0;
+}
+
+.Heading {
+    display: flex;
+    width: 60%;
+    gap: 20px;
+    flex-direction: column;
+    /* padding: 15px 20px; */
     font-family: "Source Sans 3", sans-serif;
 }
 
-.MainPageDiv>p {
+.Heading>p {
     font-size: 24px;
     line-height: 1.3;
     letter-spacing: 7px;
@@ -42,14 +54,15 @@
 
 }
 
-.MainPageDiv>h1 {
-    font-size: 120px;
+.Heading>h1 {
+    font-size: 100px;
     color: var(--col);
+    line-height: 120px;
     font-family: "Source Sans 3", sans-serif;
 
 }
 
-.MainPageDiv>h3 {
+.Heading>h3 {
     font-size: 24px;
     line-height: 2;
     color: var(--col);
@@ -57,33 +70,84 @@
 
 }
 
-.MainPageDiv>h3 span {
+.Heading>h3 span {
     font-size: 35px;
     color: var(--og);
     font-family: "Source Sans 3", sans-serif;
 
 }
-.MainPageDiv>button {
-   max-width: 170px;
-   margin: 20px 0;
-   height: 50px;
-   font-size: 18px;
-   font-weight: 800;
-   letter-spacing: 1.5px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 12px;
-   border: none;
-   background-color: var(--og);
-   color: var(--col);
-   font-family: "Source Sans 3", sans-serif;
-   text-transform: uppercase;
+
+.Heading>button {
+    max-width: 170px;
+    margin: 20px 0;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--og);
+    color: var(--col);
+    font-family: "Source Sans 3", sans-serif;
+    text-transform: uppercase;
 }
-.MainPageDiv>button:hover {
+
+.Heading>button:hover {
     box-shadow: 0 0 10px var(--og);
     text-shadow: 0 0 5px var(--og);
 }
+
+
+
+.Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    object-fit: cover;
+    position: relative;
+
+}
+
+ .Profile img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: opacity 0.6s ease-in-out;
+    position: absolute; 
+    cursor: pointer;
+
+}
+
+.Profile .FirstImg {
+    /* display: block; */
+    opacity: 1;
+    filter: drop-shadow(0 0 5px var(--col));
+}
+
+.Profile .SecondImg {
+    /* display: none; */
+    opacity: 0;
+
+}
+
+
+.Profile:hover .FirstImg {
+    /* display: none; */
+    opacity: 0;
+}
+
+.Profile:hover .SecondImg {
+    /* display: block; */
+    opacity: 1;
+    border-radius: 10px;
+}
+
+
+
 
 /* ------------------------------------------------------------------------------------------------- */
 
@@ -91,23 +155,24 @@
     width: 100%;
     flex-wrap: wrap;
     height: 100%;
-    gap: 50px;
+    gap: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .aboutDiv .boxes {
-    width: 300px;
-    height: 400px;
+    width: 280px;
+    height: 300px;
     padding: 10px 15px;
     border-radius: 30px;
     transform: scale(.9);
     color: var(--col);
     border: 1px solid rgb(58, 58, 58);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
 
 }
 
@@ -119,17 +184,126 @@
     transform: translateY(20px);
 }
 
-  .boxes:hover::before {
+.boxes:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 55px var(--og);
-  }
-  
-  .boxes:hover {
+}
+
+.boxes:hover {
     color: var(--col);
     box-shadow: 0 0 20px var(--og);
     text-shadow: 0 0 5px var(--og);
-    border: 2px solid var(--og);
+    border: 1px solid var(--og);
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
     will-change: transform;
-    transition: all 300ms cubic-bezier(0.03,0.98,0.52,0.99) 0s;
-  }
+    transition: all 300ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
+}
+
+/* ------------------------------------------------------------ */
+
+.aboutContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.information{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.information .picture {
+    width: 50%;
+    object-fit: cover;
+}
+.information .picture img {
+    width: 100%;
+    border-radius: 8px;
+}
+.information .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    color: var(--col);
+    font-family: "Source Sans 3", sans-serif;
+}
+.information .info h4 span{
+   color: var(--og);
+}
+
+/* ------------------------- */
+
+.scrollDiv{
+    width: 100%;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    overflow: hidden;
+    margin: 50px 0;
+
+
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    gap: 70px;
+}
+.scroll div{
+   display: flex;
+   /* gap: 2em; */
+}
+.scroll p{
+   font-size: 5em;
+   color: var(--col);
+   font-weight: 600;
+   margin-bottom: 0;
+   line-height: 10px;
+   text-transform: uppercase;
+
+}
+.RightToLeft{
+    animation: RightToLeft 10s linear infinite;
+}
+.RightToLeft p{
+    -webkit-text-stroke: 1px var(--col);
+    color: transparent;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 7px;
+}
+
+@keyframes RightToLeft{
+   from{
+    transform: translateX(0%);
+   }
+   to {
+    transform: translateX(-50%);
+   }
+}
+.LeftToRight{
+    animation: LeftToRight 10s linear infinite;
+    color: var(--og);
+}
+.LeftToRight p{
+    -webkit-text-stroke: 1px var(--og);
+    color: transparent;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 7px;
+
+    
+
+}
+@keyframes LeftToRight{
+    from{
+     transform: translateX(-50%);
+    }
+    to {
+     transform: translateX(0%);
+    }
+ }

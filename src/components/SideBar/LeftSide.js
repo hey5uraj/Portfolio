@@ -6,17 +6,21 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 const LeftSide = () => {
+    const openLink = (url) => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
     return (
         <div className={styles.MainDiv}>
             <div className={styles.Content}>
                 <div className={styles.Links}>
-                    <span>
+                    <span onClick={() => openLink('https://github.com/hey5uraj')}>
                         <GitHubIcon />
+
                     </span>
                     <span>
                         <InstagramIcon />
                     </span>
-                    <span>
+                    <span onClick={() => openLink('https://www.linkedin.com/feed/')}>
                         <LinkedInIcon />
                     </span>
                     <span>
