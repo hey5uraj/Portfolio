@@ -8,8 +8,8 @@ const Navbar = () => {
             window.location.href = resumeUrl;
     };
     return (
-        <div className={styles.container}>
-            <div className={styles.nav}>
+        <header className={styles.container}>
+            <nav className={styles.nav}>
                 <div className={styles.logo}>
                     <img src="/Imagesssss/Suraj bl.png" alt="" />
                 </div>
@@ -20,8 +20,8 @@ const Navbar = () => {
                     <button onClick={handleDownload}>Download CV</button>
                 </ul>
 
-            </div>
-        </div>
+            </nav>
+        </header>
     )
 }
 
