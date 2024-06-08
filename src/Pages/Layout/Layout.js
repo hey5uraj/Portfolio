@@ -12,27 +12,29 @@ const Layout = () => {
 
 
   return (
-    <div className={styles.LayoutMain}>
-      <>
-        <Navbar/>
-      </>
-      <div className={styles.layoutPage}>
-        <div className={styles.LeftSide}>
-          <LeftSide />
-        </div>
-        <div className={styles.PageContainer}>
-          {/* <Outlet /> */}
-          <MainPage/>
-        </div>
-        <div  className={styles.RightSide}>
-          <RightSide/>
-        </div>
-      </div>
+    <>
+      <Navbar />
 
-      <>
-        <Footer />
-      </>
-    </div>
+      <div className={styles.LayoutMain}>
+
+        <div className={styles.layoutPage}>
+          <div className={styles.LeftSide}>
+            <LeftSide />
+          </div>
+          <div className={styles.PageContainer}>
+            {/* <Outlet /> */}
+            <MainPage />
+          </div>
+          <div className={styles.RightSide}>
+            <RightSide />
+          </div>
+        </div>
+
+        <>
+          <Footer />
+        </>
+      </div>
+    </>
   )
 }
 

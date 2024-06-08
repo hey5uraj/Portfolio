@@ -17,7 +17,7 @@
 
 }
 
-.Content a {
+.Content>a {
     width: 100%;
     height: auto;
     display: flex;
@@ -40,30 +40,41 @@
 .MainDiv>.Content::after {
     position: absolute;
     content: '';
-    width: 5px;
+    width: 1px;
     height: 150px;
     border-radius: 30px 30px 0 0;
     background-color: var(--col);
     bottom: 0;
 }
-
-.Content .Links {
+.Links {
     position: absolute;
     bottom: 25%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
-.Content .Links span {
+
+.icons
+{
+    width: 35px;
+    height: 35px;
+     padding: 5px 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+
+}
+
+.icons>svg
+{
     width: 100%;
     height: 100%;
-    padding: 5px 0;
-}
-
-.Content .Links span svg {
-    font-size: 30px;
     color: var(--col);
-    cursor: pointer;
 }
+.icons>svg:hover
+{
 
-.Content .Links span svg:hover {
-    color: var(--hov);
+    color: var(--og);
 }
