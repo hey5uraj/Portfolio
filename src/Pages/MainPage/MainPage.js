@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './MainPage.module.css'
 import AboutMe from '../AboutMe/AboutMe'
+import Projects from '../Projects/Projects';
 
 const MainPage = () => {
 
@@ -25,6 +26,8 @@ const MainPage = () => {
                     </div>
 
                 <AboutMe />
+
+                <Projects/>
 
             </div>
         </div>

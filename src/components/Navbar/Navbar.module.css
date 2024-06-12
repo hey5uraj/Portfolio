@@ -12,9 +12,13 @@
     top: 0;
     width: 100%;
     z-index: 10;
-   
-}
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 
+}
+.scrolled {
+    background-color: rgba(23, 23, 23, 0.7);
+    backdrop-filter: blur(10px);
+}
 .nav {
     display: flex;
     width: 90%;

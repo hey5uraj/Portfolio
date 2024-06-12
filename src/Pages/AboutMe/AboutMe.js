@@ -1,34 +1,7 @@
 import React from 'react'
 import styles from '../MainPage/MainPage.module.css'
-import AcUnitIcon from '@mui/icons-material/AcUnit';
 
-const cards = [
-  {
-    id: 1,
-    icon: '',
-    label: '',
-    para: '',
-  },
-  {
-    id: 2,
-    icon: '',
-    label: '',
-    para: '',
-  },
-  {
-    id: 3,
-    icon: '',
-    label: '',
-    para: '',
-  },
-  {
-    id: 4,
-    icon: '',
-    label: '',
-    para: '',
-  }
 
-]
 
 
 const AboutMe = () => {
@@ -37,12 +10,15 @@ const AboutMe = () => {
       <div className={styles.aboutContainer}>
         <div className={styles.information}>
           <div className={styles.picture}>
-            <img src="Imagesssss/background.png" alt="" />
-          </div>
-          <div className={styles.info}>
-            <h4>About  <span> Me </span></h4>
-            <h2>I Develop System that Works</h2>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laboru doloremque laudantium, totaeaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
+            <img src="/Imagesssss/Coding.png" alt="" />
+            <div className={styles.overlay}></div>
+
+            <div className={styles.info}>
+              <h1>About  <span> Me </span></h1>
+              {/* <h2>I Develop System that Works</h2> */}
+              <p>Hi, I am Suraj Jadhav, a passionate Frontend Developer with over a year of experience specializing in React.js. I hold a Bachelor's degree in Information Technology, which has provided me with a strong foundation in web development and design. My expertise lies in building dynamic and responsive websites, primarily using HTML, CSS, and JavaScript. I take pride in creating seamless user experiences and visually appealing interfaces. Dedicated and detail-oriented, I am always eager to learn new technologies and enhance my skills to stay at the forefront of web development trends.</p>
+            </div>
+
           </div>
         </div>
 
@@ -59,25 +35,6 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className={styles.aboutDiv}>
-          {
-            cards.map((item, id) => {
-              return (
-
-                <div className={styles.boxes} key={id}>
-                  <div>
-                    <AcUnitIcon />
-                  </div>
-                  <h6>This iS Titlle</h6>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est dolorum dolorem laboriosam aspernatur autem ipsam dolor, labore vero suscipit architecto distinctio sit eos, mollitia officiis dicta obcaecati, ducimus voluptatibus molestias.</p>
-
-                </div>
-              )
-
-            })
-          }
-
-        </div>
       </div>
     </>
   )
