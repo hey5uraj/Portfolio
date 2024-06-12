@@ -114,12 +114,12 @@
 
 }
 
- .Profile img {
+.Profile img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     transition: opacity 0.6s ease-in-out;
-    position: absolute; 
+    position: absolute;
     cursor: pointer;
 
 }
@@ -153,57 +153,9 @@
 
 /* ------------------------------------------------------------------------------------------------- */
 
-.aboutDiv {
-    width: 100%;
-    flex-wrap: wrap;
-    height: 100%;
-    gap: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.aboutDiv .boxes {
-    width: 280px;
-    height: 300px;
-    padding: 10px 15px;
-    border-radius: 30px;
-    transform: scale(.9);
-    color: var(--col);
-    border: 1px solid rgb(58, 58, 58);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content:space-between;
 
-}
-
-.boxes:nth-child(odd) {
-    transform: translateY(-20px);
-}
-
-.boxes:nth-child(even) {
-    transform: translateY(20px);
-}
-
-.boxes:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 55px var(--og);
-}
-
-.boxes:hover {
-    color: var(--col);
-    box-shadow: 0 0 20px var(--og);
-    text-shadow: 0 0 5px var(--og);
-    border: 1px solid var(--og);
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
-    will-change: transform;
-    transition: all 300ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s;
-}
-
-/* ------------------------------------------------------------ */
-
-.aboutContainer{
+.aboutContainer {
     width: 100%;
     height: 100%;
     display: flex;
@@ -212,100 +164,133 @@
     align-items: center;
     justify-content: center;
 }
-.information{
+
+.information {
     width: 100%;
     display: flex;
     gap: 50px;
     align-items: center;
     justify-content: space-between;
 }
+
 .information .picture {
-    width: 50%;
-    object-fit: cover;
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    object-fit: fill;
 }
+
 .information .picture img {
     width: 100%;
+    height: 450px;
     border-radius: 8px;
 }
+
+.information .picture .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    background: linear-gradient(to left, rgba(29, 29, 29, 1), rgba(0, 0, 0, 0));
+    border-radius: 8px;
+    pointer-events: none;
+}
+
 .information .info {
+    position: absolute;
+    right: -20%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
+    width: 40%;
     color: var(--col);
     font-family: "Source Sans 3", sans-serif;
 }
-.information .info h4 span{
-   color: var(--og);
+
+.information .info h1 span {
+    color: var(--og);
 }
 
 /* ------------------------- */
 
-.scrollDiv{
+.scrollDiv {
     width: 100%;
     display: flex;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
     overflow: hidden;
     margin: 50px 0;
 
 
 }
-.scroll{
+
+.scroll {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
     gap: 70px;
 }
-.scroll div{
-   display: flex;
-   /* gap: 2em; */
+
+.scroll div {
+    display: flex;
+    /* gap: 2em; */
 }
-.scroll p{
-   font-size: 5em;
-   color: var(--col);
-   font-weight: 600;
-   margin-bottom: 0;
-   line-height: 10px;
-   text-transform: uppercase;
+
+.scroll p {
+    font-size: 5em;
+    color: var(--col);
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 10px;
+    text-transform: uppercase;
 
 }
-.RightToLeft{
+
+.RightToLeft {
     animation: RightToLeft 10s linear infinite;
 }
-.RightToLeft p{
+
+.RightToLeft p {
     -webkit-text-stroke: 1px var(--col);
     color: transparent;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 7px;
+    
 }
 
-@keyframes RightToLeft{
-   from{
-    transform: translateX(0%);
-   }
-   to {
-    transform: translateX(-50%);
-   }
+@keyframes RightToLeft {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
-.LeftToRight{
+
+.LeftToRight {
     animation: LeftToRight 10s linear infinite;
     color: var(--og);
 }
-.LeftToRight p{
+
+.LeftToRight p {
     -webkit-text-stroke: 1px var(--og);
     color: transparent;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 7px;
 
-    
+
 
 }
-@keyframes LeftToRight{
-    from{
-     transform: translateX(-50%);
+
+@keyframes LeftToRight {
+    from {
+        transform: translateX(-50%);
     }
+
     to {
-     transform: translateX(0%);
+        transform: translateX(0%);
     }
- }
+}

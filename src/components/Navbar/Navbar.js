@@ -4,11 +4,31 @@ import styles from '../Navbar/Navbar.module.css'
 const Navbar = () => {
 
     const handleDownload = () => {
-        const resumeUrl = "/PDF/Resume.pdf";
-            window.location.href = resumeUrl;
+        const resumeUrl = "/PDF/Suraj Resume.pdf";
+            window.open(resumeUrl,'_blank')
     };
+
+
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if(window.scrollY > 50) {
+                setScrolled(true);
+            } else{
+                setScrolled(false);
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
-        <header className={styles.container}>
+        <header className={`${styles.container} ${scrolled ? styles.scrolled : ''}`}>
             <nav className={styles.nav}>
                 <div className={styles.logo}>
                     <img src="/Imagesssss/Suraj bl.png" alt="" />
