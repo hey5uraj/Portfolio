@@ -7,6 +7,7 @@ const cards = [
   {
     id: 1,
     link: 'https://kjssteel.com/',
+    img:'/Imagesssss/Steel.png',
     label: 'Website',
     name: 'KJS Steel',
     para: "Assisted in developing the KJS Steel website, enhancing the company's online profile. This dynamic site effectively showcases KJS Steel's products, services, and industry expertise, with a custom CMS backend for easy content management by the client.",
@@ -15,6 +16,7 @@ const cards = [
   {
     id: 2,
     link: 'https://www.gece.net.in/',
+    img:'/Imagesssss/Gece.png',
     label: 'Website',
     name: 'GECE',
     para: 'Dummy data',
@@ -23,6 +25,7 @@ const cards = [
   {
     id: 3,
     link: '',
+    img:'/Imagesssss/Portfolio.png',
     label: 'Website',
     name: 'Portfolio Website',
     para: 'It serves as a digital resume that provides a comprehensive overview of the my career and accomplishments.',
@@ -41,8 +44,9 @@ const Projects = () => {
           cards.map((item, id) => {
             return (
               <div className={styles.projectBox} key={id}>
-                <div className={styles.proImg}>
-                  <img src="/Imagesssss/Coding.png" alt="" />
+                <div className={styles.proImg} key={item.id}>
+                  <img src={item.img} alt="" />
+                  <a href={item.link} target='_blank' className={styles.overlay}></a>
                 </div>
 
                 <div className={styles.proContent}>
@@ -50,7 +54,6 @@ const Projects = () => {
                     <p>{item.label}</p>
                     <a href={item.link} target='_blank'>{item.name} <ArrowOutwardIcon/></a>
                     <span>{item.para}</span>
-                    {/* <ArrowIcon/> */}
                     <ul>
                       {item.lang.map((lang, index) => (
                         <li key={index}>{lang}</li>
