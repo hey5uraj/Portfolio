@@ -37,7 +37,7 @@ const Navbar = () => {
                     <li><span>01. </span> About us </li>
                     <li><span>02. </span> Projects</li>
                     <li><span>03. </span> Contact</li>
-                    <button onClick={handleDownload}>Download CV</button>
+                    <button onClick={handleDownload}>Resume</button>
                 </ul>
 
             </nav>

@@ -2,11 +2,13 @@ import React from 'react'
 import styles from './MainPage.module.css'
 import AboutMe from '../AboutMe/AboutMe'
 import Projects from '../Projects/Projects';
+import ContactMe from '../ContactMe/ContactMe';
 
 const MainPage = () => {
 
-    const handleSayHello = () => {
-        window.open('https://web.whatsapp.com/', '_blank');
+    const handleDownload = () => {
+        const resumeUrl = "/PDF/Suraj Resume.pdf";
+            window.open(resumeUrl,'_blank')
     };
     return (
         <div className={styles.Container}>
@@ -16,7 +18,7 @@ const MainPage = () => {
                         <p>Hello I'M</p>
                         <h1>SURAJ JADHAV</h1>
                         <h3>A Passionate <span>Front-End Devloper</span></h3>
-                        <button onClick={handleSayHello}>Say Hello</button>
+                        <button onClick={handleDownload}>Download Resume</button>
                         </div>
 
                         <div className={styles.Profile}> 
@@ -28,6 +30,8 @@ const MainPage = () => {
                 <AboutMe />
 
                 <Projects/>
+
+                <ContactMe/>
 
             </div>
         </div>
