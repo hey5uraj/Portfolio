@@ -3,7 +3,7 @@ import styles from '../Footer/Footer.module.css'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import ColorLensIcon from '@mui/icons-material/ColorLens';
 
 const Footer = () => {
 
@@ -56,7 +56,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <footer><p>@2024 Glossy. All right reserved.</p></footer>
+            <footer><p>Designed by <ColorLensIcon/> Suraj Jadhav</p></footer>
         </div>
     )
 }

@@ -40,7 +40,7 @@
 .Heading {
     display: flex;
     width: 60%;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
     /* padding: 15px 20px; */
     font-family: "Source Sans 3", sans-serif;
@@ -59,14 +59,13 @@
 .Heading>h1 {
     font-size: 100px;
     color: var(--col);
-    line-height: 120px;
+    line-height: 100px;
     font-family: "Source Sans 3", sans-serif;
 
 }
 
 .Heading>h3 {
     font-size: 24px;
-    line-height: 2;
     color: var(--col);
     font-family: "Source Sans 3", sans-serif;
 
@@ -80,26 +79,33 @@
 }
 
 .Heading>button {
-    max-width: 170px;
+    width: max-content;
     margin: 20px 0;
     height: 50px;
     font-size: 18px;
-    font-weight: 800;
+    padding: 0 20px;
+    font-weight: 600;
     letter-spacing: 1.5px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
     border: none;
-    background-color: var(--og);
+    background-color: var(--bl);
+    border:1px solid var(--og);
+    /* background-color: var(--og); */
     color: var(--col);
     font-family: "Source Sans 3", sans-serif;
-    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
 }
 
 .Heading>button:hover {
     box-shadow: 0 0 10px var(--og);
     text-shadow: 0 0 5px var(--og);
+    background-color: var(--og);
+
 }
 
 
@@ -157,7 +163,7 @@
 
 .aboutContainer {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -213,6 +219,11 @@
     color: var(--og);
 }
 
+.information .info p span {
+    color: var(--og);
+    font-weight: 600;
+}
+
 /* ------------------------- */
 
 .scrollDiv {
@@ -257,7 +268,7 @@
     color: transparent;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 7px;
-    
+
 }
 
 @keyframes RightToLeft {

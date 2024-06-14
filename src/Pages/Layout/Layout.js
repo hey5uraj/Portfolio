@@ -22,7 +22,6 @@ const Layout = () => {
             <LeftSide />
           </div>
           <div className={styles.PageContainer}>
-            {/* <Outlet /> */}
             <MainPage />
           </div>
           <div className={styles.RightSide}>
@@ -31,7 +30,7 @@ const Layout = () => {
         </div>
 
         <>
-          <Footer />
+          {/* <Footer /> */}
         </>
       </div>
     </>

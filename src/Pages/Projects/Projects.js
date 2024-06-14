@@ -7,33 +7,34 @@ const cards = [
   {
     id: 1,
     link: 'https://kjssteel.com/',
-    img:'/Imagesssss/Steel.png',
+    img: '/Imagesssss/Steel.png',
     label: 'Website',
     name: 'KJS Steel',
     para: "Assisted in developing the KJS Steel website, enhancing the company's online profile. This dynamic site effectively showcases KJS Steel's products, services, and industry expertise, with a custom CMS backend for easy content management by the client.",
-    lang: ['HTML', 'CSS', 'JavaScript'],
+    lang: ['React Js','SQL','SPRING Boot','HTML', 'CSS','JAVA'],
   },
   {
     id: 2,
     link: 'https://www.gece.net.in/',
-    img:'/Imagesssss/Gece.png',
+    img: '/Imagesssss/Gece.png',
     label: 'Website',
     name: 'GECE',
     para: 'Dummy data',
-    lang: ['HTML', 'CSS', 'JavaScript'],
+    lang: ['HTML', 'CSS', 'JavaScript','SQL','SPRING Boot','JAVA'],
   },
   {
     id: 3,
     link: '',
-    img:'/Imagesssss/Portfolio.png',
+    img: '/Imagesssss/Portfolio.png',
     label: 'Website',
     name: 'Portfolio Website',
     para: 'It serves as a digital resume that provides a comprehensive overview of the my career and accomplishments.',
-    lang: ['HTML', 'CSS', 'JavaScript'],
+    lang: ['React Js','HTML', 'CSS', 'JavaScript'],
   },
 
 
 ]
+
 
 
 const Projects = () => {
@@ -44,15 +45,18 @@ const Projects = () => {
           cards.map((item, id) => {
             return (
               <div className={styles.projectBox} key={id}>
-                <div className={styles.proImg} key={item.id}>
-                  <img src={item.img} alt="" />
-                  <a href={item.link} target='_blank' className={styles.overlay}></a>
+                <div className={styles.proImg}>
+                  <a a href={item.link} target='_blank'  rel='noopener noreferrer'>
+                    <img src={item.img} alt="" />
+                    <div className={styles.overlay}></div>
+                  </a>
                 </div>
 
                 <div className={styles.proContent}>
                   <div>
                     <p>{item.label}</p>
-                    <a href={item.link} target='_blank'>{item.name} <ArrowOutwardIcon/></a>
+                    <a href={item.link} target='_blank'  rel='noopener noreferrer'>
+                      {item.name} <ArrowOutwardIcon /></a>
                     <span>{item.para}</span>
                     <ul>
                       {item.lang.map((lang, index) => (

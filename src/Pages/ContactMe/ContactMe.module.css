@@ -1,0 +1,73 @@
+.footerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    /* background: rgb(221, 161, 161); */
+}
+
+.getInTouch {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.getInTouch>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.getInTouch>div>h1 {
+    color: var(--og);
+}
+
+.getInTouch>div>span {
+    color: var(--col);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.getInTouch>div>p {
+    color: var(--col);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.getInTouch>div>button {
+    width: max-content;
+    margin: 20px 0;
+    height: 50px;
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--bl);
+    border:1px solid var(--og);
+    /* background-color: var(--og); */
+    color: var(--col);
+    font-family: "Source Sans 3", sans-serif;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.getInTouch>div>button:hover {
+    box-shadow: 0 0 10px var(--og);
+    text-shadow: 0 0 5px var(--og);
+    background-color: var(--og);
+
+}

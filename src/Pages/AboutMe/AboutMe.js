@@ -15,8 +15,7 @@ const AboutMe = () => {
 
             <div className={styles.info}>
               <h1>About  <span> Me </span></h1>
-              {/* <h2>I Develop System that Works</h2> */}
-              <p>Hi, I am Suraj Jadhav, a passionate Frontend Developer with over a year of experience specializing in React.js. I hold a Bachelor's degree in Information Technology, which has provided me with a strong foundation in web development and design. My expertise lies in building dynamic and responsive websites, primarily using HTML, CSS, and JavaScript. I take pride in creating seamless user experiences and visually appealing interfaces. Dedicated and detail-oriented, I am always eager to learn new technologies and enhance my skills to stay at the forefront of web development trends.</p>
+              <p>Hi, I am <span>Suraj Jadhav</span> , a passionate Frontend Developer with over a year of experience specializing in React.js. I hold a Bachelor's degree in Information Technology, which has provided me with a strong foundation in web development and design. My expertise lies in building dynamic and responsive websites, primarily using HTML, CSS, and JavaScript. I take pride in creating seamless user experiences and visually appealing interfaces. Dedicated and detail-oriented, I am always eager to learn new technologies and enhance my skills to stay at the forefront of web development trends.</p>
             </div>
 
           </div>
