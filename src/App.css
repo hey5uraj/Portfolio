@@ -14,10 +14,12 @@
 }
 
 :root{
-  --col:#fff;
+  --nameCol:#fff;
+  --col:#cacecc;
   /* --bl:#000; */
   /* --bl:#25262f; */
   --bl:#1d1d1d;
   --og:#80db66;
   --hov:#61a74d;
 }
+

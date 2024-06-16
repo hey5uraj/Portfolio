@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../Navbar/Navbar.module.css'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
 
     const handleDownload = () => {
         const resumeUrl = "/PDF/Suraj Resume.pdf";
-            window.open(resumeUrl,'_blank')
+        window.open(resumeUrl, '_blank')
     };
 
 
@@ -13,9 +14,9 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if(window.scrollY > 50) {
+            if (window.scrollY > 50) {
                 setScrolled(true);
-            } else{
+            } else {
                 setScrolled(false);
             }
         }
@@ -31,12 +32,29 @@ const Navbar = () => {
         <header className={`${styles.container} ${scrolled ? styles.scrolled : ''}`}>
             <nav className={styles.nav}>
                 <div className={styles.logo}>
-                    <img src="/Imagesssss/Suraj bl.png" alt="" />
+                    <ScrollLink to="/" smooth={true} duration={500}>
+                        <img src="/Imagesssss/Suraj bl.png" alt="" />
+                    </ScrollLink>
                 </div>
                 <ul className={styles.links}>
-                    <li><span>01. </span> About us </li>
-                    <li><span>02. </span> Projects</li>
-                    <li><span>03. </span> Contact</li>
+                    <li>
+                        <ScrollLink to="about" smooth={true} duration={500}>
+                            <span>01. </span> About us
+                        </ScrollLink>
+                    </li>
+
+                    <li>
+                        <ScrollLink to="projects" smooth={true} duration={500}>
+                            <span>02. </span> Projects
+                        </ScrollLink>
+                    </li>
+
+                    <li>
+                        <ScrollLink to="contact" smooth={true} duration={500}>
+                            <span>03. </span> Contact
+                        </ScrollLink>
+                    </li>
+
                     <button onClick={handleDownload}>Resume</button>
                 </ul>
 
