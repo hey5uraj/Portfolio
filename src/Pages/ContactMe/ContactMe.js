@@ -10,7 +10,7 @@ const ContactMe = () => {
         <div className={styles.footerContainer}>
             <div className={styles.getInTouch}>
                 <div>
-                    <h1>Contact Me</h1>
+                    <h1><span>03. </span> Contact </h1>
                     <span>Get In Touch</span>
                     <p>My inbox is always open, whether you have a Conversation or just want to say Hi,I will try my best to get back to you</p>
 
