@@ -15,14 +15,14 @@ const LeftSide = () => {
                     <a href="https://github.com/hey5uraj" target='_blank' className={styles.icons}>
                         <GithubIcon />
                     </a>
-                    <a href="https://www.linkedin.com/feed/" target='_blank' className={styles.icons}>
+                    <a href="https://www.linkedin.com/in/suraj-jadhav-75a313205/" target='_blank' className={styles.icons}>
                         <LinkedInIcon />
                     </a>
-                    <a href="https://www.instagram.com/" target='_blank' className={styles.icons}>
+                    <a href="https://www.instagram.com/hey5uraj/" target='_blank' className={styles.icons}>
                         <InstagramIcon />
                     </a>
 
-                    <a href="wdw" target='_blank' className={styles.icons}>
+                    <a href="https://x.com/hey5uraj" target='_blank' className={styles.icons}>
                         <TwitterIcon />
                     </a>
                 </div>

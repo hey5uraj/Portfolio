@@ -19,7 +19,7 @@ const cards = [
     img: '/Imagesssss/Gece.png',
     label: 'Website',
     name: 'GECE',
-    para: 'Dummy data',
+    para: "Assisted in developing the GECE website, enhancing the company's online profile. This dynamic site effectively showcases KJS Steel's products, services, and industry expertise, with a custom CMS backend for easy content management by the client.",
     lang: ['HTML', 'CSS', 'JavaScript', 'SQL', 'SPRING Boot', 'JAVA'],
   },
   {

@@ -4,7 +4,7 @@ import styles from './ContactMe.module.css'
 const ContactMe = () => {
 
     const handleSayHello = () => {
-        window.open('https://web.whatsapp.com/', '_blank');
+        window.open('https://web.whatsapp.com/+919076164621?text="Hi Suraj!"', '_blank');
     };
     return (
         <div className={styles.footerContainer}>
