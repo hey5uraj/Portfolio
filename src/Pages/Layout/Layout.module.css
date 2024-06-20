@@ -5,13 +5,7 @@
     width: 100%;
     height: 100vh;
 }
-/* .navbar{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background-color: #f8f9fa;
-    transition: all 0.3s ease;
-  } */
+
 
 .layoutPage{
     display: flex;
@@ -28,7 +22,7 @@
 }
 .LeftSide {
     position: fixed;
-    left: 0;
+    left: 30px;
     top: 0;
     bottom: 0;
     width: 80px;
@@ -36,7 +30,7 @@
 }
 .RightSide {
     position: fixed;
-    right: 0;
+    right: 30px;
     top: 0;
     bottom: 0;
     width: 80px;
