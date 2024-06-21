@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding:0 10px;
+    padding: 0 10px;
 }
 
 .innerConainers {
@@ -25,7 +25,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-   margin-top: 50px;
+    margin-top: 50px;
 }
 
 .Heading {
@@ -48,7 +48,7 @@
 }
 
 .Heading>h1 {
-    font-size: 100px;
+    font-size: 6rem;
     color: var(--nameCol);
     line-height: 100px;
     font-family: "Source Sans 3", sans-serif;
@@ -83,7 +83,7 @@
     border-radius: 12px;
     border: none;
     background-color: var(--bl);
-    border:1px solid var(--og);
+    border: 1px solid var(--og);
     color: var(--col);
     font-family: "Source Sans 3", sans-serif;
     cursor: pointer;
@@ -135,45 +135,82 @@
 
 
 @media screen and (max-width:786px) {
-    .MainPageDiv{
+    .MainPageDiv {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
+        height: 100%;
+        margin-top: 180px;
     }
-    .Heading{
-        width: 80%;
+
+    .Heading {
+        width: 100%;
     }
-    .Profile{
-        display: none;
+
+    .Profile {
+        width: 100%;
+        height: 350px;
+        min-height: 350px;
+        min-width: 100%;
+        object-fit: contain;
     }
+    .Profile img {
+        object-fit: contain;
+        width: 100%;
+    }
+    .Heading>p {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 4px;
+    }
+
     .Heading>h1 {
-        font-size: 50px;
+        font-size: 2.6rem;
         line-height: 50px;
     }
-    
+
     .Heading>h3 {
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    .Heading>h3 span {
+        font-size: 18px;
+
+    }
+
+    .Heading>button {
+        width: max-content;
+        margin: 10px 0;
+        height: 30px;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .Profile .SecondImg {
+        opacity: 1;
+        border-radius: 10px;
+    }
+    .contain2 {
+        padding-top: 50px;
     }
     
-    .Heading>h3 span {
-        font-size: 25px;
-  
-    }
 }
 
 /* ------------------------------------------------------------------------------------------------- */
 
 
-.contain1{
+.contain1 {
     width: 100%;
     padding-top: 50px;
 }
-.contain2{
+
+.contain2 {
     width: 100%;
     padding-top: 100px;
     height: 100%;
 }
-.contain3{
+
+.contain3 {
     display: flex;
     width: 100%;
     padding: 15px 20px;
