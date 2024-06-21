@@ -6,6 +6,7 @@ import LeftSide from '../../components/SideBar/LeftSide'
 import RightSide from '../../components/SideBar/RightSide'
 import { Outlet } from 'react-router-dom'
 import MainPage from '../MainPage/MainPage'
+import IconsFooter from '../../components/IconsFooter/IconsFooter';
 
 const Layout = () => {
 
@@ -32,6 +33,8 @@ const Layout = () => {
         <>
           {/* <Footer /> */}
         </>
+
+        <IconsFooter/>
       </div>
     </>
   )

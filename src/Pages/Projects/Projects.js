@@ -53,7 +53,7 @@ const Projects = ({ showInfo }) => {
               return (
                 <div className={styles.projectBox} key={id}>
                   <div className={styles.proImg}>
-                    <a a href={item.link} target='_blank' rel='noopener noreferrer'>
+                    <a href={item.link} target='_blank' rel='noopener noreferrer'>
                       <img src={item.img} alt="" />
                       <div className={styles.overlay}></div>
                     </a>
