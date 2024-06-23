@@ -7,7 +7,7 @@ const cards = [
   {
     id: 1,
     link: 'https://kjssteel.com/',
-    img: '/Imagesssss/Steel.png',
+    img: '/Imagesssss/kjssSteel.png',
     label: 'Website',
     name: 'KJS Steel',
     para: "Assisted in developing the KJS Steel website, enhancing the company's online profile. This dynamic site effectively showcases KJS Steel's products, services, and industry expertise, with a custom CMS backend for easy content management by the client.",
@@ -52,12 +52,11 @@ const Projects = ({ showInfo }) => {
             cards.map((item, id) => {
               return (
                 <div className={styles.projectBox} key={id}>
-                  <div className={styles.proImg}>
-                    <a href={item.link} target='_blank' rel='noopener noreferrer'>
+                  <a href={item.link} target='_blank' className={styles.proImg} rel='noopener noreferrer'>
                       <img src={item.img} alt="" />
                       <div className={styles.overlay}></div>
-                    </a>
-                  </div>
+                    {/* </a> */}
+                  </a>
 
                   <div className={styles.proContent}>
                     <div>

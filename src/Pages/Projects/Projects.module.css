@@ -54,6 +54,8 @@
     width: 50%;
     height: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .proImg img {
@@ -82,7 +84,7 @@
 }
 
 .proImg:hover {
-    box-shadow: 0 0 15px 1px var(--og);
+    box-shadow: 0 0 10px 1px var(--og);
     border-radius: 8px;
 }
 
