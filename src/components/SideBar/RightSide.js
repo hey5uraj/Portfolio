@@ -6,7 +6,7 @@ const RightSide = () => {
     <div className={styles.MainDiv}>
       <div className={styles.Content}>
       <div className={styles.Links}>
-        <a href='' className={styles.mail}>surajjadhav4621@gmail.com</a>
+        <a href="mailto:surajjadhav4621@gmail.com" className={styles.mail}>surajjadhav4621@gmail.com</a>
       </div>
       </div>
     </div>
