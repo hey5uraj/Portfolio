@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 100000;
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 
 }
@@ -32,6 +32,7 @@
     width: 500px;
     max-width: 500px;
     justify-content: space-between;
+
 }
 
 .links li {
@@ -74,7 +75,7 @@
 .logo img:hover{
     filter: drop-shadow(0 0 5px var(--og));
 }
-.links button{
+.links>button{
    width: 120px;
    height: 35px;
    font-size: 16px;
@@ -86,7 +87,7 @@
    cursor: pointer;
 
 }
-.links button:hover{
+.links>button:hover{
    background-color: var(--og);
     box-shadow: 0 0 10px var(--og);
     text-shadow: 0 0 5px var(--og);
