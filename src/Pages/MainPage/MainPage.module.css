@@ -115,10 +115,13 @@
     transition: opacity 0.6s ease-in-out;
     position: absolute;
     cursor: pointer;
+    border-radius: 10px;
+
     /* border-radius: 8px;
     filter: grayscale(1);
     transition: 0.3s ease-in-out; */
 }
+
 /* .Profile img:hover{
     filter: none;
 } */
@@ -134,6 +137,8 @@
 
 .Profile:hover .FirstImg {
     opacity: 0;
+    border-radius: 10px;
+
 }
 
 .Profile:hover .SecondImg {
@@ -163,10 +168,12 @@
         min-width: 100%;
         object-fit: contain;
     }
+
     .Profile img {
         object-fit: contain;
         width: 100%;
     }
+
     .Heading>p {
         font-size: 14px;
         font-weight: 700;
@@ -194,14 +201,16 @@
         font-size: 14px;
         padding: 0 10px;
     }
+
     .Profile .SecondImg {
         opacity: 1;
         border-radius: 10px;
     }
+
     .contain2 {
         padding-top: 50px;
     }
-    
+
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -226,4 +235,18 @@
     align-items: center;
     gap: 10px;
     margin: 100px 0;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .innerConainers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+
+    }
 }
