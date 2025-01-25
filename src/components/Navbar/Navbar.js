@@ -5,7 +5,8 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 const Navbar = () => {
 
     const handleDownload = () => {
-        const resumeUrl = "/PDF/Suraj Resume.pdf";
+        // const resumeUrl = "/PDF/Suraj Resume.pdf";
+        const resumeUrl = "/PDF/Resume.pdf";
         window.open(resumeUrl, '_blank')
     };
 
