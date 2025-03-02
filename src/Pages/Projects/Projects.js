@@ -6,6 +6,15 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 const cards = [
   {
     id: 1,
+    link: 'https://suraj-mern.netlify.app/',
+    img: '/Imagesssss/MERN.png',
+    label: 'Website',
+    name: 'SurajAdminPanel',
+    para: "Built a MERN-based website with Vite for the React.js frontend, featuring an admin panel and essential pages like registration, login, contact, and services, Designed a Node.js and Express backend with MongoDB for efficient data management.Showcased strong full-stack development skills through a responsive and functional application",
+    lang: ['MongoDB', 'Express', 'React js',' Node js'],
+  },
+  {
+    id: 1,
     link: 'https://kjssteel.com/',
     img: '/Imagesssss/kjssSteel.png',
     label: 'Website',
