@@ -14,7 +14,7 @@ const cards = [
     lang: ['MongoDB', 'Express', 'React js',' Node js'],
   },
   {
-    id: 1,
+    id: 2,
     link: 'https://kjssteel.com/',
     img: '/Imagesssss/kjssSteel.png',
     label: 'Website',
@@ -23,7 +23,7 @@ const cards = [
     lang: ['React Js', 'SQL', 'SPRING Boot', 'HTML', 'CSS', 'JAVA'],
   },
   {
-    id: 2,
+    id: 3,
     link: 'https://www.gece.net.in/',
     img: '/Imagesssss/Gece.png',
     label: 'Website',
@@ -32,7 +32,7 @@ const cards = [
     lang: ['HTML', 'CSS', 'JavaScript', 'SQL', 'SPRING Boot', 'JAVA'],
   },
   {
-    id: 3,
+    id: 4,
     link: '',
     img: '/Imagesssss/Portfolio.png',
     label: 'Website',
