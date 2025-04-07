@@ -6,7 +6,7 @@ const Navbar = () => {
 
     const handleDownload = () => {
         // const resumeUrl = "/PDF/Resume.pdf";
-        const resumeUrl = "/PDF/Suraj Resume.pdf";
+        const resumeUrl = "/PDF/Suraj_Resume.pdf";
         window.open(resumeUrl, '_blank')
     };
 
