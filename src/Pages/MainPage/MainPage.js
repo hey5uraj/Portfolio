@@ -7,7 +7,8 @@ import ContactMe from '../ContactMe/ContactMe';
 const MainPage = () => {
 
     const handleDownload = () => {
-        const resumeUrl = "/PDF/Resume.pdf";
+        // const resumeUrl = "/PDF/Resume.pdf";
+        const resumeUrl = "/PDF/Suraj_Resume.pdf";
         window.open(resumeUrl, '_blank')
     };
     return (
